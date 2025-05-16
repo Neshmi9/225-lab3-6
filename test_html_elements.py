@@ -14,7 +14,7 @@ class TestH2Tag(unittest.TestCase):
         driver = self.driver
         driver.get("http://10.48.10.170")  # Replace with your actual IP if needed
         time.sleep(3)  # Wait for the page to fully load
-        h2_text = driver.find_element(By.TAG_NAME, "h2").text
+	h2_text = driver.find_element(By.TAG_NAME, "h2").text
         self.assertEqual("Add Contacts", h2_text)
 
     def tearDown(self):
